@@ -3,7 +3,31 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\paulb\Downloads\transfer_486721_files_b29d82a3\TP_Cortex_u4\RTX_Cortex.uvproj
-Project File Date:  08/31/2016
+C:\Users\picas\Documents\Mines\SAM2\SAM3\RTX_Cortex.uvproj
+Project File Date:  09/02/2020
 
 <h2>Output:</h2>
+Build target 'MCBSTM32'
+linking...
+Program Size: Code=3358 RO-data=290 RW-data=8 ZI-data=512  
+".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
+Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'MCBSTM32'
+compiling en_tete.c...
+en_tete.c(22): warning:  #1295-D: Deprecated declaration CLOCK_init - give arg types
+en_tete.c(23): warning:  #1295-D: Deprecated declaration FLASH_init - give arg types
+en_tete.c(24): warning:  #1295-D: Deprecated declaration GPIO_init - give arg types
+linking...
+Program Size: Code=3382 RO-data=290 RW-data=8 ZI-data=512  
+".\RTX_Cortex.axf" - 0 Errors, 3 Warning(s).
+Build target 'MCBSTM32'
+linking...
+Program Size: Code=3382 RO-data=290 RW-data=8 ZI-data=512  
+".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
+Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
+Erase Done.
+Programming Done.
+Verify OK.

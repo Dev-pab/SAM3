@@ -31,11 +31,12 @@ int main (void)
    
 	CLOCK_init();
   GPIO_init();
+	
+	GPIO_ResetBits(GPIOB, GPIO_Pin_All);
 	 
   while (1)
 	{
-		//GPIO_WriteBit(GPIOB, GPIO_Pin_8, (BitAction)(1^GPIO_ReadOutputDataBit(GPIOB, GPIO_Pin_8)));
-		GPIO_ResetBits(GPIOB, GPIO_Pin_All);
+		GPIO_WriteBit(GPIOB, GPIO_Pin_8, (BitAction)(1^GPIO_ReadOutputDataBit(GPIOB, GPIO_Pin_8)));
 	}
 }
 
