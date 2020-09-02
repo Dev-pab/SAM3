@@ -1,0 +1,11 @@
+signal void pwm (void) {
+  while (1) {
+   
+    PORTC |= 0x140;             /* PC6, 8 = 1 */
+    swatch (0.0002);             /* wait 0.2 milliseconds */
+	PORTC &= ~0x140;            /* PC6,8 = 0    */
+    swatch (0.0008);             /* wait 0.8 milliseconds */
+  }
+}
+
+pwm()
