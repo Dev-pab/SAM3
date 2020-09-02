@@ -22,6 +22,8 @@
 void CLOCK_init();
 void FLASH_init();
 void GPIO_init();
+void EXTI_init ();
+void NVIC_init(void);
 
 /*----------------------------------------------------------------------------
  *        Main: Initialize 
@@ -31,12 +33,14 @@ int main (void)
    
 	CLOCK_init();
   GPIO_init();
+	EXTI_init ();
+	NVIC_init();
 	
 	GPIO_ResetBits(GPIOB, GPIO_Pin_All);
 	 
   while (1)
 	{
-		GPIO_WriteBit(GPIOB, GPIO_Pin_8, (BitAction)(1^GPIO_ReadOutputDataBit(GPIOB, GPIO_Pin_8)));
+		//GPIO_WriteBit(GPIOB, GPIO_Pin_8, (BitAction)(1^GPIO_ReadOutputDataBit(GPIOB, GPIO_Pin_8)));
 	}
 }
 
@@ -57,6 +61,7 @@ void CLOCK_init()
 		RCC_PCLK2Config(RCC_HCLK_Div1);
 		RCC_AHBPeriphClockCmd(RCC_AHBPeriph_SRAM|RCC_AHBPeriph_FLITF, ENABLE );
 		RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+		RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
 	} 
 	else while (1);
 	
@@ -71,12 +76,46 @@ void FLASH_init()
 void GPIO_init() 
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
+	GPIO_InitTypeDef GPIOA_InitStructure;
+	
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_All;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOB, &GPIO_InitStructure);
+	
+	GPIOA_InitStructure.GPIO_Pin = GPIO_PinSource1;
+	GPIOA_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+	GPIOA_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_Init(GPIOA, &GPIOA_InitStructure);
 }
 
+void EXTI_init ()
+{
+	EXTI_InitTypeDef EXTI_InitStructure;
+	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource1); /* Selects PA.1 as EXTI */
+	EXTI_InitStructure.EXTI_Line = EXTI_Line0; /* Line 1 */
+	EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling;
+	EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+	EXTI_Init(&EXTI_InitStructure);
+}
+
+void NVIC_init(void)
+{
+	NVIC_InitTypeDef NVIC_InitStructure;
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); /* Configure 2 bits for preemption priority */
+	NVIC_InitStructure.NVIC_IRQChannel = EXTI0_IRQChannel; /* Enable the EXTI1 Interrupt */
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
+}
+
+void EXTI0_IRQHandler(void)
+{
+	EXTI_ClearITPendingBit(EXTI_Line0); // Acquitement
+	GPIO_WriteBit(GPIOB, GPIO_Pin_8, (BitAction)(1^GPIO_ReadOutputDataBit(GPIOB, GPIO_Pin_8)));
+}
 
 /*----------------------------------------------------------------------------
  * end of file
