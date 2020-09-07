@@ -7,56 +7,10 @@ C:\Users\picas\Documents\Mines\SAM2\SAM3\RTX_Cortex.uvproj
 Project File Date:  09/02/2020
 
 <h2>Output:</h2>
-Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
 Build target 'MCBSTM32'
 compiling en_tete.c...
-en_tete.c(22): warning:  #1295-D: Deprecated declaration CLOCK_init - give arg types
-en_tete.c(23): warning:  #1295-D: Deprecated declaration FLASH_init - give arg types
-en_tete.c(24): warning:  #1295-D: Deprecated declaration GPIO_init - give arg types
-en_tete.c(25): warning:  #1295-D: Deprecated declaration EXTI_init - give arg types
-en_tete.c(41): error:  #268: declaration may not appear after executable statement in block
-en_tete.c(42): error:  #268: declaration may not appear after executable statement in block
-en_tete.c(46): error:  #137: expression must be a modifiable lvalue
-".\RTX_Cortex.axf" - 3 Errors, 4 Warning(s).
-Target not created
-Build target 'MCBSTM32'
-compiling en_tete.c...
-en_tete.c(22): warning:  #1295-D: Deprecated declaration CLOCK_init - give arg types
-en_tete.c(23): warning:  #1295-D: Deprecated declaration FLASH_init - give arg types
-en_tete.c(24): warning:  #1295-D: Deprecated declaration GPIO_init - give arg types
-en_tete.c(25): warning:  #1295-D: Deprecated declaration EXTI_init - give arg types
-en_tete.c(45): error:  #137: expression must be a modifiable lvalue
-".\RTX_Cortex.axf" - 1 Errors, 4 Warning(s).
-Target not created
-Build target 'MCBSTM32'
-compiling en_tete.c...
-en_tete.c(22): warning:  #1295-D: Deprecated declaration CLOCK_init - give arg types
-en_tete.c(23): warning:  #1295-D: Deprecated declaration FLASH_init - give arg types
-en_tete.c(24): warning:  #1295-D: Deprecated declaration GPIO_init - give arg types
-en_tete.c(25): warning:  #1295-D: Deprecated declaration EXTI_init - give arg types
-en_tete.c(35): warning:  #550-D: variable "message2" was set but never used
 linking...
-Program Size: Code=5060 RO-data=10288 RW-data=8 ZI-data=512  
-".\RTX_Cortex.axf" - 0 Errors, 5 Warning(s).
-Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'MCBSTM32'
-compiling en_tete.c...
-en_tete.c(22): warning:  #1295-D: Deprecated declaration CLOCK_init - give arg types
-en_tete.c(23): warning:  #1295-D: Deprecated declaration FLASH_init - give arg types
-en_tete.c(24): warning:  #1295-D: Deprecated declaration GPIO_init - give arg types
-en_tete.c(25): warning:  #1295-D: Deprecated declaration EXTI_init - give arg types
-linking...
-Program Size: Code=4958 RO-data=10290 RW-data=8 ZI-data=10512  
-".\RTX_Cortex.axf" - 0 Errors, 4 Warning(s).
-Build target 'MCBSTM32'
-linking...
-Program Size: Code=4958 RO-data=10290 RW-data=8 ZI-data=10512  
+Program Size: Code=9938 RO-data=290 RW-data=8 ZI-data=1536  
 ".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
 Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
 Erase Done.
@@ -64,13 +18,45 @@ Programming Done.
 Verify OK.
 Build target 'MCBSTM32'
 compiling en_tete.c...
-en_tete.c(22): warning:  #1295-D: Deprecated declaration CLOCK_init - give arg types
-en_tete.c(23): warning:  #1295-D: Deprecated declaration FLASH_init - give arg types
-en_tete.c(24): warning:  #1295-D: Deprecated declaration GPIO_init - give arg types
-en_tete.c(25): warning:  #1295-D: Deprecated declaration EXTI_init - give arg types
 linking...
-Program Size: Code=5658 RO-data=10290 RW-data=8 ZI-data=10512  
-".\RTX_Cortex.axf" - 0 Errors, 4 Warning(s).
+Program Size: Code=9946 RO-data=290 RW-data=8 ZI-data=1536  
+".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
+Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'MCBSTM32'
+compiling en_tete.c...
+linking...
+Program Size: Code=9946 RO-data=290 RW-data=8 ZI-data=1536  
+".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
+Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'MCBSTM32'
+compiling en_tete.c...
+linking...
+Program Size: Code=9946 RO-data=290 RW-data=8 ZI-data=1536  
+".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
+Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'MCBSTM32'
+compiling en_tete.c...
+linking...
+Program Size: Code=9958 RO-data=290 RW-data=8 ZI-data=1536  
+".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
+Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'MCBSTM32'
+compiling en_tete.c...
+linking...
+Program Size: Code=9958 RO-data=290 RW-data=8 ZI-data=1536  
+".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
 Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
 Erase Done.
 Programming Done.
