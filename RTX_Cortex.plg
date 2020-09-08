@@ -3,61 +3,32 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\picas\Documents\Mines\SAM2\SAM3\RTX_Cortex.uvproj
+C:\Users\picas\Documents\Mines\SAM2\Moteur\RTX_Cortex.uvproj
 Project File Date:  09/02/2020
 
 <h2>Output:</h2>
 Build target 'MCBSTM32'
 compiling en_tete.c...
+en_tete.c(357): warning:  #1-D: last line of file ends without a newline
 linking...
-Program Size: Code=9938 RO-data=290 RW-data=8 ZI-data=1536  
+Program Size: Code=10270 RO-data=290 RW-data=16 ZI-data=1536  
+".\RTX_Cortex.axf" - 0 Errors, 1 Warning(s).
+Build target 'MCBSTM32'
+compiling en_tete.c...
+linking...
+Program Size: Code=10270 RO-data=290 RW-data=16 ZI-data=1536  
 ".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
-Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
+Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\Moteur\\RTX_Cortex.axf" 
 Erase Done.
 Programming Done.
 Verify OK.
 Build target 'MCBSTM32'
 compiling en_tete.c...
 linking...
-Program Size: Code=9946 RO-data=290 RW-data=8 ZI-data=1536  
+Program Size: Code=8274 RO-data=290 RW-data=8 ZI-data=512  
 ".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
-Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'MCBSTM32'
-compiling en_tete.c...
-linking...
-Program Size: Code=9946 RO-data=290 RW-data=8 ZI-data=1536  
-".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
-Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'MCBSTM32'
-compiling en_tete.c...
-linking...
-Program Size: Code=9946 RO-data=290 RW-data=8 ZI-data=1536  
-".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
-Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'MCBSTM32'
-compiling en_tete.c...
-linking...
-Program Size: Code=9958 RO-data=290 RW-data=8 ZI-data=1536  
-".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
-Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'MCBSTM32'
-compiling en_tete.c...
-linking...
-Program Size: Code=9958 RO-data=290 RW-data=8 ZI-data=1536  
-".\RTX_Cortex.axf" - 0 Errors, 0 Warning(s).
-Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\SAM3\\RTX_Cortex.axf" 
+Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\Moteur\\RTX_Cortex.axf" 
+Load "C:\\Users\\picas\\Documents\\Mines\\SAM2\\Moteur\\RTX_Cortex.axf" 
 Erase Done.
 Programming Done.
 Verify OK.
